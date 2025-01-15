@@ -19,7 +19,12 @@ describe("String Calculator", () => {
   it("should support custom delimiters", () => {
     expect(add("//;\n1;2")).toBe(3);
   });
-  
+  it("should throw an exception when multiple negative numbers are provided", () => {
+    expect(() => add("1,-2,-5,3")).toThrow("Negative numbers not allowed: -2, -5");
+  });
+  it("should throw an exception when custom delimiter is used with negative numbers", () => {
+    expect(() => add("//;\n1;-2;3;-4")).toThrow("Negative numbers not allowed: -2, -4");
+  });
 });
 
 
