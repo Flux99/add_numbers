@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# countargs
+#
+echo The number of arguments is $#
+exit 0

@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# dirscript2
+#
+DIRECTORY=$1
+USER=$2
+GROUP=$3
+mkdir /$DIRECTORY
+chown $USER $DIRECTORY
+chgrp $GROUP $DIRECTORY
+chmod 770 $DIRECTORY
+exit 0

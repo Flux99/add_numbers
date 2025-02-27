@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# argscript
+#
+ARG1=$1
+ARG2=$2
+ARG3=$3
+SCRIPTNAME=$0
+echo The name of this script is $SCRIPTNAME
+echo The first argument used is $ARG1
+echo The second argument used is $ARG2
+echo The third argument used is $ARG3
+exit 0

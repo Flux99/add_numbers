@@ -1,0 +1,6 @@
+#!/bin/bash
+# askinput.sh
+
+echo "Enter some text:"
+read SOMETEXT
+echo -e "You have entered the following text:\t$SOMETEXT"

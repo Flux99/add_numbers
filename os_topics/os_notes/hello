@@ -1,0 +1,6 @@
+#!/bin/bash
+# this is the hello script
+# run it by typing ./hello in the directory where you've found it
+clear
+echo hello world
+exit 0

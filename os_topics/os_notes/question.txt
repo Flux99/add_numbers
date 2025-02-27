@@ -1,0 +1,14 @@
+https://underpaid.medium.com/i-received-sre-offers-from-facebook-and-google-without-a-university-degree-here-is-how-224f06b49e7d
+topics from which i asked
+
+explain linux boot process ?
+whats zombie process
+orphan process
+what will happen when memory is full
+signal
+types of signals and their numbers (much more signals to learn)
+out of memory (https://www.kernel.org/doc/gorman/html/understand/understand016.html)
+completly fair scheduling
+inter process communication and locking
+control groups and namespaces (it will send message)
+ls -l (tokenize the comands ) (not gone into disk part)

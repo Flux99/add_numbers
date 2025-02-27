@@ -1,0 +1,36 @@
+When using ps aux, process information is shown in different columns:
+
+USER: The name of the user whose identity is used to run the process.
+PID: The process identification number, a unique number required to manage processes.
+%CPU: The percentage of CPU cycles used by the process.
+%MEM: The percentage of memory used by the process.
+VSZ: The virtual memory size, representing the total amount of memory claimed by the process. Often, this is more than what is actually needed, known as memory over-allocation.
+RSS: The resident memory size, indicating the actual amount of memory used by the process.
+TTY: The device name of the terminal if the process was started from a terminal.
+STAT: The current status of the process. Common statuses include:
+S: Sleeping
+R: Running
+Z: Zombie state
+START: The time the process started.
+TIME: The cumulative real time (in seconds) the process has used CPU cycles since it started.
+COMMAND: The name of the command file used to start the process. If enclosed in brackets, it is a kernel process.
+
+
+commands to kill the process
+Here’s a summary of the key points on managing processes with signals:
+
+1. **Common Signals**:
+   - **SIGHUP (1)**: Tells a process to reinitialize and reread configuration files.
+   - **SIGKILL (9)**: Forcefully stops a process immediately without cleanup; risk of data loss if open files are not properly closed.
+   - **SIGTERM (15)**: Politely requests a process to terminate, allowing it to close files and release resources. Preferred for graceful shutdown.
+
+2. **Using the `kill` Command**:
+   - Format: `kill [signal] [PID]`
+   - Example: `kill -9 123` or `kill -SIGKILL 123` to send the SIGKILL signal to process with PID 123.
+   - You can send signals to multiple PIDs at once.
+
+3. **Using `killall` for Multiple Processes**:
+   - Format: `killall [signal] [process name]`
+   - Example: `killall -SIGTERM httpd` sends SIGTERM to all active `httpd` processes.
+  
+These commands allow administrators to manage processes by stopping, restarting, or reloading configurations effectively.
