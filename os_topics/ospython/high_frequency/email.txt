@@ -1,0 +1,5 @@
+Hello from john@example.com,
+Please contact jane_doe123@sample.org for more info.
+john@example.com is also available.
+testing@@fkef0333j.commmm2
+name@  this is to test the code  @@random.com

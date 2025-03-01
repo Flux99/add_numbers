@@ -1,0 +1,7 @@
+192.168.174.133: Linda Thomsen sales San Francisco
+Michelle Escalante marketing Salt Lake City
+Lori Smith sales Honolulu
+Zeina tlink marketing San Francisco
+Anja de Vries sales Amsterdam
+Susan Menyrop marketing Eindhove
+192.168.174.132: None
